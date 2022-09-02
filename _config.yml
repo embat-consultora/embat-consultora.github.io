@@ -1,2 +1,3 @@
-Source: ./theme/
+source: ./theme/
 root: /theme/
+include: [theme]
