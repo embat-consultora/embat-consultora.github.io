@@ -1,14 +1,19 @@
-@@include('header.htm')
-
-@@include('blocks/navigation.htm')
+@@include('header.htm') @@include('blocks/navigation.htm')
 
 <!-- banner -->
-<section class="banner bg-cover position-relative d-flex justify-content-center align-items-center"
-  data-background="images/banner/banner2.jpg">
+<section
+  class="banner bg-cover position-relative d-flex justify-content-center align-items-center"
+  data-background="images/banner/banner2.jpg"
+>
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h1 class="display-1 text-white font-weight-bold font-primary">Creative Agency</h1>
+        <img class="logoBig" src="images/logo.png" />
+        <h3 class="text-white font-weight-bold">
+          Somos una red de profesionales que acompaña a las empresas en las
+          oportunidades que se le presentan para evolucionar y reinventar las
+          tradicionales formas de hacer las cosas.
+        </h3>
       </div>
     </div>
   </div>
@@ -20,24 +25,25 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
-        <h2 class="section-title">Our Services</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.</p>
+        <h2 class="section-title">¿Cómo podemos ayudarte?</h2>
         <div class="section-border"></div>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-4 mb-4 mb-lg-0">
-        <div class="card hover-bg-secondary shadow py-4 active">
+        <div class="card hover-bg-secondary shadow py-4">
           <div class="card-body text-center">
             <div class="position-relative">
               <i
-                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-palette mb-5 d-inline-block text-white"></i>
-              <i class="icon-lg icon-watermark text-white ti-palette"></i>
+                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-user mb-5 d-inline-block text-white"
+              ></i>
+              <i class="icon-lg icon-watermark text-white ti-user"></i>
             </div>
-            <h4 class="mb-4">Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+            <h4 class="mb-4">LÍDERES</h4>
+            <p>
+              Identificar y desarrollar el talento como una capacidad
+              organizacional generadora de valor y fuente de competitividad.
+            </p>
           </div>
         </div>
       </div>
@@ -46,11 +52,16 @@
           <div class="card-body text-center">
             <div class="position-relative">
               <i
-                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-dashboard mb-5 d-inline-block text-white"></i>
-              <i class="icon-lg icon-watermark text-white ti-dashboard"></i>
+                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-heart-broken mb-5 d-inline-block text-white"
+              ></i>
+              <i class="icon-lg icon-watermark text-white ti-heart-broken"></i>
             </div>
-            <h4 class="mb-4">Development</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+            <h4 class="mb-4">RECURSOS HUMANOS</h4>
+            <p>
+              Diseñar políticas, procesos y programas con foco en la gestión
+              estratégica de las personas y la experiencia de los colaboradores
+              como centro.
+            </p>
           </div>
         </div>
       </div>
@@ -59,11 +70,15 @@
           <div class="card-body text-center">
             <div class="position-relative">
               <i
-                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-announcement mb-5 d-inline-block text-white"></i>
-              <i class="icon-lg icon-watermark text-white ti-announcement"></i>
+                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-stats-up mb-5 d-inline-block text-white"
+              ></i>
+              <i class="icon-lg icon-watermark text-white ti-stats-up"></i>
             </div>
-            <h4 class="mb-4">Marketing</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+            <h4 class="mb-4">ORGANIZACIÓN</h4>
+            <p>
+              Definir los procesos y la organización que permita construir la
+              estructura más adecuada para alcanzar los objetivos estratégicos.
+            </p>
           </div>
         </div>
       </div>
@@ -74,33 +89,116 @@
 
 @@include('blocks/feature.htm')
 
-@@include('blocks/team.htm')
-
-<!-- about -->
-<section class="section-lg position-relative bg-cover" data-background="images/backgrounds/about-bg.jpg">
-  <img src="images/backgrounds/about-bg-overlay.png" alt="overlay" class="overlay-image img-fluid">
+<section class="section">
   <div class="container">
-    <div class="row justify-content-between">
-      <div class="col-lg-6 col-md-8 col-sm-7 col-8">
-        <h2 class="text-white mb-4">Who We Are</h2>
-        <p class="text-light mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.</p>
-        <a href="about.html" class="btn btn-primary">Read More</a>
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="section-title">
+          ¿En qué procesos podemos brindar asesoramiento?
+        </h2>
+        <div class="section-border"></div>
       </div>
-      <div class="col-md-2 col-sm-4 col-4 text-right align-self-end">
-        <a class="venobox" data-autoplay="true" data-vbtype="video"
-          href="https://www.youtube.com/watch?v=jrkvirglgaQ"><i
-            class="text-center icon-sm icon-box rounded-circle text-white bg-gradient-primary d-block ti-control-play"></i></a>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <i
+                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-layout-menu-v mb-5 d-inline-block text-white"
+              ></i>
+              <i class="icon-lg icon-watermark text-white ti-layout-menu-v"></i>
+            </div>
+            <h4 class="mb-4">Diseño de la Organización</h4>
+            <p>
+              Rediseñamos y adecuamos el organigrama a la estrategia de negocio.
+              Desarrollamos descripción de puestos y la valoración de los mismos
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <i
+                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-bolt-alt mb-5 d-inline-block text-white"
+              ></i>
+              <i class="icon-lg icon-watermark text-white ti-bolt-alt"></i>
+            </div>
+            <h4 class="mb-4">Agilidad y Optimización de Procesos</h4>
+            <p>
+              Relevamos y rediseñamos los procesos dentro de la organización,
+              para detectar oportunidades de mejora que nos permitan
+              eficientizar las formas de hacer las cosas
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <div class="position-relative">
+              <i
+                class="icon-lg icon-box bg-gradient-primary rounded-circle ti-pie-chart mb-5 d-inline-block text-white"
+              ></i>
+              <i class="icon-lg icon-watermark text-white ti-pie-chart"></i>
+            </div>
+            <h4 class="mb-4">Administración y Finanzas</h4>
+            <p>
+              Hacemos soporte a tu organización en aquellos procesos como
+              facturación, cobro, registraciones contables, pago, conciliación
+              de cuentas bancarias, conciliación de clientes y proveedores
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+<section>@@include('blocks/cta.htm')</section>
+@@include('blocks/team.htm')
+
+<!-- about -->
+<!-- <section
+  class="section-lg position-relative bg-cover"
+  data-background="images/backgrounds/about-bg.jpg"
+>
+  <img
+    src="images/backgrounds/about-bg-overlay.png"
+    alt="overlay"
+    class="overlay-image img-fluid"
+  />
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-6 col-md-8 col-sm-7 col-8">
+        <h2 class="text-white mb-4">Who We Are</h2>
+        <p class="text-light mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <a href="about.html" class="btn btn-primary">Read More</a>
+      </div>
+      <div class="col-md-2 col-sm-4 col-4 text-right align-self-end">
+        <a
+          class="venobox"
+          data-autoplay="true"
+          data-vbtype="video"
+          href="https://www.youtube.com/watch?v=jrkvirglgaQ"
+          ><i
+            class="text-center icon-sm icon-box rounded-circle text-white bg-gradient-primary d-block ti-control-play"
+          ></i
+        ></a>
+      </div>
+    </div>
+  </div>
+</section> -->
 <!-- /about -->
 
 <!-- project -->
-<section class="section">
+<!-- <section class="section">
   <div class="container-fluid px-0">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
@@ -112,7 +210,11 @@
     <div class="row no-gutters shuffle-wrapper">
       <div class="col-lg-4 col-md-6 shuffle-item">
         <div class="project-item">
-          <img src="images/project/project-1.jpg" alt="project-image" class="img-fluid w-100">
+          <img
+            src="images/project/project-1.jpg"
+            alt="project-image"
+            class="img-fluid w-100"
+          />
           <div class="project-hover bg-secondary px-4 py-3">
             <a href="#" class="text-white h4">Project title</a>
             <a href="#"><i class="ti-link icon-xs text-white"></i></a>
@@ -121,7 +223,11 @@
       </div>
       <div class="col-lg-4 col-md-6 shuffle-item">
         <div class="project-item">
-          <img src="images/project/project-2.jpg" alt="project-image" class="img-fluid w-100">
+          <img
+            src="images/project/project-2.jpg"
+            alt="project-image"
+            class="img-fluid w-100"
+          />
           <div class="project-hover bg-secondary px-4 py-3">
             <a href="#" class="text-white h4">Project title</a>
             <a href="#"><i class="ti-link icon-xs text-white"></i></a>
@@ -130,7 +236,11 @@
       </div>
       <div class="col-lg-4 col-md-6 shuffle-item">
         <div class="project-item">
-          <img src="images/project/project-3.jpg" alt="project-image" class="img-fluid w-100">
+          <img
+            src="images/project/project-3.jpg"
+            alt="project-image"
+            class="img-fluid w-100"
+          />
           <div class="project-hover bg-secondary px-4 py-3">
             <a href="#" class="text-white h4">Project title</a>
             <a href="#"><i class="ti-link icon-xs text-white"></i></a>
@@ -139,7 +249,11 @@
       </div>
       <div class="col-lg-4 col-md-6 shuffle-item">
         <div class="project-item">
-          <img src="images/project/project-4.jpg" alt="project-image" class="img-fluid w-100">
+          <img
+            src="images/project/project-4.jpg"
+            alt="project-image"
+            class="img-fluid w-100"
+          />
           <div class="project-hover bg-secondary px-4 py-3">
             <a href="#" class="text-white h4">Project title</a>
             <a href="#"><i class="ti-link icon-xs text-white"></i></a>
@@ -148,7 +262,11 @@
       </div>
       <div class="col-lg-4 col-md-6 shuffle-item">
         <div class="project-item">
-          <img src="images/project/project-5.jpg" alt="project-image" class="img-fluid w-100">
+          <img
+            src="images/project/project-5.jpg"
+            alt="project-image"
+            class="img-fluid w-100"
+          />
           <div class="project-hover bg-secondary px-4 py-3">
             <a href="#" class="text-white h4">Project title</a>
             <a href="#"><i class="ti-link icon-xs text-white"></i></a>
@@ -157,17 +275,15 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- /project -->
 
 <!-- call to action -->
-<section>
-  @@include('blocks/cta.htm')
-</section>
+
 <!-- /call to action -->
 
 <!-- pricing -->
-<section class="section pb-0">
+<!-- <section class="section pb-0">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
@@ -181,7 +297,12 @@
           <div class="card-body text-center">
             <h4 class="text-white">Basic</h4>
             <p class="text-light mb-4">Besic and simple website</p>
-            <p class="text-white mb-4">$ <span class="display-3 font-weight-bold vertical-align-middle">30</span></p>
+            <p class="text-white mb-4">
+              $
+              <span class="display-3 font-weight-bold vertical-align-middle"
+                >30</span
+              >
+            </p>
             <ul class="list-unstyled mb-5">
               <li class="text-white mb-3">Mobile-Optimized Website</li>
               <li class="text-white mb-3">Powerful Website Metrics</li>
@@ -199,7 +320,12 @@
           <div class="card-body text-center">
             <h4 class="text-white">Basic</h4>
             <p class="text-light mb-4">Besic and simple website</p>
-            <p class="text-white mb-4">$ <span class="display-3 font-weight-bold vertical-align-middle">30</span></p>
+            <p class="text-white mb-4">
+              $
+              <span class="display-3 font-weight-bold vertical-align-middle"
+                >30</span
+              >
+            </p>
             <ul class="list-unstyled mb-5">
               <li class="text-white mb-3">Mobile-Optimized Website</li>
               <li class="text-white mb-3">Powerful Website Metrics</li>
@@ -217,7 +343,12 @@
           <div class="card-body text-center">
             <h4 class="text-white">Basic</h4>
             <p class="text-light mb-4">Besic and simple website</p>
-            <p class="text-white mb-4">$ <span class="display-3 font-weight-bold vertical-align-middle">30</span></p>
+            <p class="text-white mb-4">
+              $
+              <span class="display-3 font-weight-bold vertical-align-middle"
+                >30</span
+              >
+            </p>
             <ul class="list-unstyled mb-5">
               <li class="text-white mb-3">Mobile-Optimized Website</li>
               <li class="text-white mb-3">Powerful Website Metrics</li>
@@ -232,11 +363,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- /pricing -->
-
-@@include('blocks/blog.htm')
-
 @@include('blocks/footer.htm')
-
 @@include('footer.htm')

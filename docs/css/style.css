@@ -15,10 +15,10 @@ VERSION:	Versoin Number
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
 /*  typography */
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Poppins:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Monserrat:300,400,500,600,700&display=swap");
 body {
   line-height: 1.2;
-  font-family: "Poppins", sans-serif;
+  font-family: "Monserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #6c6c86;
@@ -29,7 +29,7 @@ p {
   color: #6c6c86;
   font-size: 15px;
   line-height: 1.7;
-  font-family: "Poppins", sans-serif;
+  font-family: "Monserrat", sans-serif;
 }
 
 .lead {
@@ -110,7 +110,7 @@ h6, .h6 {
 /* Button style */
 .btn {
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Monserrat", sans-serif;
   text-transform: capitalize;
   padding: 13px 45px;
   border-radius: 35px;
@@ -132,12 +132,12 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);
+  background: linear-gradient(37deg, rgb(255, 0, 140) 1%, rgb(248, 52, 105) 100%);
   color: #fff;
   border: 0;
 }
 .btn-primary:active, .btn-primary:hover, .btn-primary.focus, .btn-primary.active {
-  background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%) !important;
+  background:linear-gradient(37deg, rgb(255, 0, 140) 1%, rgb(248, 52, 105) 100%) !important;
   color: #fff;
   border: 0;
 }
@@ -148,18 +148,18 @@ h6, .h6 {
   border-color: #f7463a;
 }
 .btn-outline-primary:active, .btn-outline-primary:hover, .btn-outline-primary.focus, .btn-outline-primary.active {
-  background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%) !important;
+  background: linear-gradient(37deg, rgb(255, 0, 140) 1%, rgb(248, 52, 105) 100%) !important;
   color: #fff;
   border-color: #f7463a;
 }
 
 .btn-secondary {
-  background: #07085d;
+  background: #0d0649;
   color: #fff;
   border: 0;
 }
 .btn-secondary:active, .btn-secondary:hover, .btn-secondary.focus, .btn-secondary.active {
-  background: #07085d !important;
+  background: #0d0649 !important;
   color: #fff;
   border: 0;
 }
@@ -200,12 +200,12 @@ body {
 }
 
 ::-moz-selection {
-  background: #f9746b;
+  background: #ef8627;
   color: #fff;
 }
 
 ::selection {
-  background: #f9746b;
+  background: #ef8627;
   color: #fff;
 }
 
@@ -233,7 +233,14 @@ img {
   vertical-align: middle;
   border: 0;
 }
+.logo {
+    width: min(50vw, 160px);
+}
 
+.logoBig {
+    width: min(50vw, 400px);
+    padding-bottom: 10px;
+}
 a {
   color: #f7463a;
 }
@@ -284,11 +291,17 @@ a:hover {
 .section-border {
   height: 9px;
   width: 220px;
-  background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);
+  background: linear-gradient(37deg,rgb(255, 0, 140) 1%, rgb(109, 35,144)100%);
   border-radius: 5px;
   margin: 40px auto 90px;
 }
-
+.section-border-yellow {
+  height: 9px;
+  width: 220px;
+  background: linear-gradient(37deg,rgb(239, 134, 39 ) 1%, rgb(44, 194, 208)100%);
+  border-radius: 5px;
+  margin: 40px auto 90px;
+}
 .bg-cover {
   background-size: cover;
   background-position: center center;
@@ -342,7 +355,7 @@ a:hover {
   width: 100%;
   top: 0;
   left: 0;
-  background: #07085d;
+  background: #6d2372;
   opacity: 0.8;
 }
 .overlay-secondary-half {
@@ -355,7 +368,7 @@ a:hover {
   width: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(to right, #07085d 60%, transparent);
+  background: linear-gradient(to right, #6d2372 60%, transparent);
 }
 .overlay-image {
   position: absolute;
@@ -378,7 +391,7 @@ a:hover {
 }
 
 .bg-secondary {
-  background: #07085d !important;
+  background: #0d0649 !important;
 }
 
 .text-primary {
@@ -386,11 +399,17 @@ a:hover {
 }
 
 .text-secondary {
-  color: #07085d !important;
+  color: #0d0649 !important;
 }
 
 .text-gradient-primary {
-  background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%);
+  background: linear-gradient(37deg, rgb(255, 0, 140) 1%, rgb(248, 52, 105) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-primary-2 {
+  background-color: rgb(239, 134, 39);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -456,7 +475,7 @@ a:hover {
 }
 
 .font-primary {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Monserrat", sans-serif !important;
 }
 
 .font-secondary {
@@ -468,7 +487,7 @@ a:hover {
 }
 
 .bg-gradient-primary {
-  background: linear-gradient(37deg, rgb(180, 62, 121) 1%, rgb(247, 70, 58) 100%) !important;
+  background: linear-gradient(37deg,rgb(255, 0, 140) 1%, rgb(109, 35,144)100%) !important;
 }
 
 .transition {
@@ -518,7 +537,7 @@ textarea.form-control {
   font-size: 14px;
   left: 0;
   top: 0px;
-  color: #07085d;
+  color: #0d0649;
   transition: 0.3s ease;
 }
 
@@ -529,7 +548,7 @@ textarea.form-control {
   width: 50px;
   border-radius: 50%;
   line-height: 50px;
-  background: #07085d;
+  background: #0d0649;
   color: #fff;
   text-align: center;
 }
@@ -540,7 +559,7 @@ textarea.form-control {
   transition: 0.3s ease;
 }
 .navigation.nav-bg {
-  background-color: #07085d;
+  background-color: #0d0649;
   padding: 15px 100px;
 }
 @media (max-width: 991px) {
@@ -551,12 +570,12 @@ textarea.form-control {
 @media (max-width: 991px) {
   .navigation {
     padding: 20px;
-    background: #07085d;
+    background: #0d0649;
   }
 }
 
 .navbar .nav-item .nav-link {
-  font-family: "Poppins", sans-serif;
+  font-family: "Monserrat", sans-serif;
   padding: 15px;
   font-size: 18px;
 }
@@ -579,7 +598,7 @@ textarea.form-control {
   position: relative;
   color: #000;
   transition: 0.2s ease;
-  font-family: "Poppins", sans-serif;
+  font-family: "Monserrat", sans-serif;
   padding: 10px;
   text-decoration: none;
   margin-bottom: 0 !important;
@@ -610,13 +629,13 @@ textarea.form-control {
   transition: inherit;
 }
 .hover-bg-secondary:hover {
-  background: #07085d;
+  background: #0d0649;
 }
 .hover-bg-secondary:hover * {
   color: #fff;
 }
 .hover-bg-secondary.active {
-  background: #07085d;
+  background: #0d0649;
 }
 .hover-bg-secondary.active * {
   color: #fff;
@@ -939,7 +958,12 @@ footer .overlay-image {
   max-height: 260px;
   max-width: 260px;
 }
-
+.team{
+    margin-right: 0;
+    justify-content: center!important;
+    margin-left: 0;
+    padding-left: 10px;
+}
 .card {
   border: 0;
   border-radius: 0;
