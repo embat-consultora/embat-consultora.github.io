@@ -54,32 +54,32 @@ gulp.task("html:build", function () {
 });
 
 // SCSS
-gulp.task("scss:build", function () {
-  return gulp
-    .src(path.src.scss)
-    .pipe(sourcemaps.init())
-    .pipe(
-      sass({
-        outputStyle: "expanded",
-      }).on("error", sass.logError)
-    )
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write("/"))
-    .pipe(
-      comments(`
-    WEBSITE: https://themefisher.com
-    TWITTER: https://twitter.com/themefisher
-    FACEBOOK: https://www.facebook.com/themefisher
-    GITHUB: https://github.com/themefisher/
-    `)
-    )
-    .pipe(gulp.dest(path.build.dir + "css/"))
-    .pipe(
-      bs.reload({
-        stream: true,
-      })
-    );
-});
+// gulp.task("scss:build", function () {
+//   return gulp
+//     .src(path.src.scss)
+//     .pipe(sourcemaps.init())
+//     .pipe(
+//       sass({
+//         outputStyle: "expanded",
+//       }).on("error", sass.logError)
+//     )
+//     .pipe(autoprefixer())
+//     .pipe(sourcemaps.write("/"))
+//     .pipe(
+//       comments(`
+//     WEBSITE: https://themefisher.com
+//     TWITTER: https://twitter.com/themefisher
+//     FACEBOOK: https://www.facebook.com/themefisher
+//     GITHUB: https://github.com/themefisher/
+//     `)
+//     )
+//     .pipe(gulp.dest(path.build.dir + "css/"))
+//     .pipe(
+//       bs.reload({
+//         stream: true,
+//       })
+//     );
+// });
 
 // Javascript
 gulp.task("js:build", function () {

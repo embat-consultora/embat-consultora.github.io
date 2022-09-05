@@ -41,35 +41,41 @@
 <body>
   
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="index.html"><img class="logo" src="images/logo.png" alt="Logo Embat"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <header class="navigation fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo" src="images/logo.png" alt="Logo Embat"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="services.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#main">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#footer">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
 <!-- page-title -->
 <section class="page-title bg-cover" data-background="images/backgrounds/page-title.jpg">
@@ -145,52 +151,105 @@
 </section>
 
 <!-- footer -->
-<footer class="bg-secondary position-relative">
-  <img src="images/backgrounds/map.png" class="img-fluid overlay-image" alt="">
-  <div class="section">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-3 col-6">
-          <h4 class="text-white mb-5">Nosotros</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light d-block mb-3">Servicios</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Equipo</a></li>
-            <li><a href="#" class="text-light d-block mb-3">Portfolio</a></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <div class="bg-white p-4">
-            <h3>Contacto</h3>
-            <form action="#">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Nombre completo">
-              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="Email">
-              <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="Mensaje"></textarea>
-              <button class="btn btn-primary" type="submit">Enviar</button>
-            </form>
+    <footer class="bg-secondary position-relative">
+      <img
+        src="images/backgrounds/map.png"
+        class="img-fluid overlay-image"
+        alt=""
+      />
+      <div class="section" id="footer">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-3 col-6">
+              <h4 class="text-white mb-5">Nosotros</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="index.html#main" class="text-light d-block mb-3">Servicios</a>
+                </li>
+                <li>
+                  <a href="index.html#nosotros" class="text-light d-block mb-3">Equipo</a>
+                </li>
+                <li>
+                  <a href="index.html#top" class="text-light d-block mb-3">Home</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="col-6">
+                <h4 class="text-white mb-5">Contactanos</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="mailto: embat.consultora@gmail.com"
+                      class="text-light d-block mb-3"
+                      >Email: embat.consultora@gmail.com
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=34666126573&text=Hola, tengo una consulta sobre sus servicios"
+                      class="text-light d-block mb-3"
+                      >Sofia Aguirre: +34666126573</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=34624394935&text=Hola, tengo una consulta sobre sus servicios"
+                      class="text-light d-block mb-3"
+                      >Romina Coll: +34624394935</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="pb-4">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-left">
-          <p class="text-light mb-0">Copyright &copy; 2019 a theme by <a class="text-gradient-primary" href="https://themefisher.com">themefisher.com</a>
-          </p>
-        </div>
-        <div class="col-md-6">
-          <ul class="list-inline text-md-right text-center">
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-facebook"></i></a></li>
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-twitter-alt"></i></a></li>
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-instagram"></i></a></li>
-            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-github"></i></a></li>
-          </ul>
+      <div class="pb-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-left">
+              <p class="text-light mb-0">
+                Copyright &copy; 2019 a theme by
+                <a class="text-gradient-primary" href="https://themefisher.com"
+                  >themefisher.com</a
+                ><br />
+                Develop by
+                <a
+                  class="text-gradient-primary"
+                  href="https://www.linkedin.com/in/pisciolariantonela/"
+                  >antopiscio</a
+                >
+              </p>
+            </div>
+            <!-- <div class="col-md-6">
+              <ul class="list-inline text-md-right text-center">
+                <li class="list-inline-item">
+                  <a class="d-block p-3 text-white" href="#"
+                    ><i class="ti-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="d-block p-3 text-white" href="#"
+                    ><i class="ti-twitter-alt"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="d-block p-3 text-white" href="#"
+                    ><i class="ti-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="d-block p-3 text-white" href="#"
+                    ><i class="ti-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 <!-- /footer -->
 
 <!-- jQuery -->
