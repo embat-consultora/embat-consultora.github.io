@@ -154,7 +154,7 @@ gulp.task("clean", function (cb) {
 gulp.task("watch:build", function () {
   gulp.watch(path.src.html, gulp.series("html:build"));
   gulp.watch(path.src.htminc, gulp.series("html:build"));
-  gulp.watch(path.src.scss, gulp.series("scss:build"));
+  // gulp.watch(path.src.scss, gulp.series("scss:build"));
   gulp.watch(path.src.js, gulp.series("js:build"));
   gulp.watch(path.src.images, gulp.series("images:build"));
   gulp.watch(path.src.fonts, gulp.series("fonts:build"));
@@ -168,7 +168,7 @@ gulp.task(
     "clean",
     "html:build",
     "js:build",
-    "scss:build",
+    // "scss:build",
     "images:build",
     "fonts:build",
     "plugins:build",
@@ -189,7 +189,7 @@ gulp.task(
   gulp.series(
     "html:build",
     "js:build",
-    "scss:build",
+    // "scss:build",
     "images:build",
     "fonts:build",
     "plugins:build"
