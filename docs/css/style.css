@@ -23,7 +23,9 @@ body {
   font-size: 15px;
   color: #6c6c86;
 }
-
+.text-blog{
+  text-align: justify;
+}
 p {
   font-weight: 400;
   color: #6c6c86;
